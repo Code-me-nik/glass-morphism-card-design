@@ -1,0 +1,66 @@
+/* { }this symbols are not working so here is that for copy and paste only */
+body{
+  background-repeat: no-repeat;
+  background: linear-gradient(#ff5f6d , #ffc371) no-repeat fixed ;
+}
+.maincontainer{ 
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+  width:90%;
+  height: auto ;
+}
+.morph-circle1, .morph-circle2, .morph-circle3{  
+width: 200px;
+height: 280px;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow:inset 5px 5px 10px rgb(103, 54, 54) , inset -2px -2px 6px white; 
+background-color: rgba(242, 247, 244,0.2);
+border-radius: 15px;
+margin:10px;
+} 
+:hover.morph-circle1, :hover.morph-circle2, :hover.morph-circle3 { 
+box-shadow: 5px 10px 20px rgb(47, 47, 47) ;
+}
+button{ 
+  border: none;
+  border-radius:10px;
+  background-color: #ff5f6d ;
+  color: #ffc371 ;
+  font-weight:bolder;
+  font-size: 25px;
+  margin-top: 15px;      
+  
+}
+.article-div h2{ 
+  font-size: 25px;
+  padding: 20px;
+ }
+ /* hover effect for card text */
+ :hover.article-div h2 { 
+  padding:19px ;
+font-size:27px ;
+color: white;
+}
+ .article-div{ 
+color: white;
+text-align: center;
+}
+h2{ 
+  font-size: 35px;
+  color: white;
+  font-family: arial;
+}
+h2 span {
+  background-color: tomato;
+ }
+
+ @media screen and (max-width:700px){
+  .maincontainer{ 
+  flex-direction: column;
+  justify-content:space-evenly;
+}
+
+}
